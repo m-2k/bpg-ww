@@ -37,6 +37,8 @@ bpgw.onmessage = function(e) {
     };
 };
 
+// arrayBuffer: BPG image
+// container: id of canvas (DOM) for rendering
 function decodeBpg(arrayBuffer,container) {
     bpgw.postMessage({type:'image', img:arrayBuffer, meta:container});
 };
